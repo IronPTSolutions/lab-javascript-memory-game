@@ -2,6 +2,8 @@
 
 # LAB | DOM Memory Game
 
+DEMO: https://ironptsolutions.github.io/lab-javascript-memory-game/
+
 ## Introduction
 
 We just learned how to use (Vanilla) JavaScript to manipulate DOM elements. Great! Let's practice a bit more and have fun while developing a game.
