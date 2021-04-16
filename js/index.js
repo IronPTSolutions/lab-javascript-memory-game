@@ -45,12 +45,19 @@ function onClickCard(event) {
         })
         memoryGame.pickedCards = [];
 
+        updateScore();
+
         if (memoryGame.isFinished()) {
           alert(`You won!!! score: ${memoryGame.pairsClicked}`);
         }
-      }, 700);
+      }, 900);
     }
   }
+}
+
+function updateScore() {
+  document.getElementById('pairs-clicked').textContent = memoryGame.pairsClicked;
+  document.getElementById('pairs-guessed').textContent = memoryGame.pairsGuessed;
 }
 
 window.addEventListener('load', () => {
@@ -69,4 +76,5 @@ window.addEventListener('load', () => {
   // Bind the click event of each element to a function
   document.querySelectorAll('.card')
     .forEach(card => card.addEventListener('click', onClickCard));
+
 });
